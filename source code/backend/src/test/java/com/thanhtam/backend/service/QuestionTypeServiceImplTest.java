@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @Transactional
 @Rollback
-public class QuestionTypeServiceTest {
+public class QuestionTypeServiceImplTest {
 
     @Autowired
     private QuestionTypeRepository questionTypeRepository;

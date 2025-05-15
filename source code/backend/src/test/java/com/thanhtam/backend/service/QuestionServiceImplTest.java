@@ -4,14 +4,12 @@ import com.thanhtam.backend.dto.AnswerSheet;
 import com.thanhtam.backend.dto.ExamQuestionPoint;
 import com.thanhtam.backend.entity.*;
 import com.thanhtam.backend.repository.*;
-import com.thanhtam.backend.service.QuestionServiceImpl;
 import com.thanhtam.backend.ultilities.DifficultyLevel;
 import com.thanhtam.backend.ultilities.EQTypeCode;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -34,7 +32,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @Transactional
 @Rollback
-public class QuestionServiceTest {
+public class QuestionServiceImplTest {
 
     @Autowired
     private QuestionRepository questionRepository;

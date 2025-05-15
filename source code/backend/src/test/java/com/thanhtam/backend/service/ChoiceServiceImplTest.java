@@ -2,21 +2,16 @@ package com.thanhtam.backend.service;
 
 import com.thanhtam.backend.entity.Choice;
 import com.thanhtam.backend.repository.ChoiceRepository;
-import org.junit.Before;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
-
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
 
 /**
  * Lớp test cho ChoiceServiceImpl
@@ -28,7 +23,7 @@ import static org.mockito.Mockito.*;
 @ExtendWith(SpringExtension.class)
 @Transactional
 @Rollback
-public class ChoiceServiceTest {
+public class ChoiceServiceImplTest {
 
     @Autowired
     private ChoiceRepository choiceRepository;
